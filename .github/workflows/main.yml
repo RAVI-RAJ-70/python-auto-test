@@ -1,15 +1,12 @@
-# This is a basic workflow to help you get started with Actions
 
 name: Python Testing
-
-# Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
-  # push:
-  #   branches: [ "master" ]
+  push:
+    branches: [ "master" ]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  # workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -44,8 +41,3 @@ jobs:
       - name: Run a second script
         run: python two.py
 
-      # Runs a set of commands using the runners shell
-      # - name: Run a multi-line script
-      #   run: |
-      #     echo Add other actions to build,
-      #     echo test, and deploy your project.
